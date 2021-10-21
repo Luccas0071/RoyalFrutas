@@ -11,8 +11,10 @@ class Database{
 
 
     public function __construct(){
+        
         //Fonte de dados contem as informaçoes necessarias para conectar ao banco de dados.
         $dsn = 'mysql:host='.$this-> host. ';port='.$this->porta.';dbname'.$this->banco;
+
         $opcoes = [
             //Armazena em cache a conexão para ser reutilizada, evita a sobrecarga de uma nova conexão, resultando em um aplicação mais rapida
             PDO:: ATTR_PERSISTENT => true,
