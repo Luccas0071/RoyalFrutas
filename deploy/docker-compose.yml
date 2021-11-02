@@ -1,10 +1,14 @@
 version: '3.8'
 services:
-  php:
+  php-apache:
     container_name: eunelson-php
-    image: php:8.0-apache
+    build:
+      context: ../.
+      dockerfile: ./deploy/Dockerfile
+    depends_on:
+      - db
     volumes:
-      - .:/var/www/html
+      - ../.:/var/www/html
     ports:
       - 8080:80
   db:
