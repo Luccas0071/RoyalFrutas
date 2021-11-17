@@ -11,11 +11,12 @@
           <li><a href="<?= URL ?>" class="nav-link px-2 text-white">Home</a></li>
           <li><a href="<?= URL ?>paginas/produtos" class="nav-link px-2 text-white">Produtos</a></li>
           <li><a href="<?= URL ?>paginas/sobre" class="nav-link px-2 text-white">Sobre Nós</a></li>
+          <li></li>
         </ul>
 
         <div class="text-end">
           <button type="button" class="btn btn-outline-light me-2">Acessar</button>
-          <button type="button" class="btn btn-warning">Cadastrar-se</button>
+          <a href="<?= URL ?>usuarios/cadastrar" class="btn btn-warning">Cadastrar-se</a>
         </div>
       </div>
     </div>

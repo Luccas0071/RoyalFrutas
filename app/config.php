@@ -1,7 +1,6 @@
 <?php
    define('APP', dirname(__FILE__));
-   define('URL', 'http://localhost/ProjetoRoyalFrutas/');
+   define('URL', 'http://localhost/RoyalFrutas/');
    define('APP_NOME', 'Royal Frutas');
-
-   const APP_VERSAO = '1.0';
+   define('APP_VERSAO', '1.0');
 ?>

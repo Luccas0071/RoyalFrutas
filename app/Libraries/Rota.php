@@ -20,7 +20,7 @@ class Rota {
       }
 
       require_once '../app/Controllers/'.$this->controlador.'.php';
-      $this->controlador = new $this->controlador;
+      $this->controlador = new $this->controlador; //Cria instancia do controlador
 
       if(isset($url[1])) {
         if(method_exists($this->controlador, $url[1])){

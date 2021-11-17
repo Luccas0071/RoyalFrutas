@@ -1,9 +1,10 @@
 <?php
   include './../app/config.php';
-  include './../app/Libraries/Rota.php';
-  include './../app/Libraries/Controller.php';
-  include './../app/Libraries/Database.php';
-  $db = new Database();
+  include './../app/autoload.php';
+
+/*   include './../app/Libraries/DatabaseTeste.php';
+  $db = new Database(); */
+
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?= URL?>/public/css/estilos.css" rel="stylesheet">
-    <title>Arquitetura MVC</title>
+    <title>Royal Frutas</title>
   </head>
   <body>
     <?php

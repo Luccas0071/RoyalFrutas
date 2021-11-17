@@ -5,7 +5,7 @@ class Paginas extends Controller {
   public function index() {
     $dados = [
       'titulo' => 'Pagina Inicial',
-      'descricao' => 'Curso php 7',
+      'descricao' => 'Pagina Inicial'
     ];
     $this->view('paginas/home', $dados);
   }
@@ -13,7 +13,7 @@ class Paginas extends Controller {
   public function sobre() {
     $dados = [
       'titulo' => 'Pagina Sobre nós',
-      'descricao' => 'Curso php 7',
+      'descricao' => 'Pagina sobre'
     ];
     $this->view('paginas/sobre', $dados);
   }
